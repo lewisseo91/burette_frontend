@@ -4,7 +4,7 @@
   user-select: none;
   cursor: pointer;
   border: none;
-  .active {
+  &.active { // sibling
     border: 1px green solid;
   }
 }
