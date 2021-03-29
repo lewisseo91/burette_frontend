@@ -22,6 +22,7 @@ const list = [
   { name: 'About Foo4', link: '/about/foo', exact: false },
   { name: 'Posts4', link: '/posts', exact: false },
 ];
+
 const MenuItem = ({text, link, exact, selected}) => {
   return (
         <NavLink { ...exact ? 'exact' : ''} to={link}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.scss';
 
 const Header = () => {
     const activeStyle = {
@@ -7,20 +8,19 @@ const Header = () => {
     };
 
     return (
-        <div>
-            <div>
+        <div className={`header`}>
+            <div className={`header-logo`}>
                 <h1>로고</h1>
             </div>
-            <div>
+            <div className={`header-search`}>
                 검색 부분
             </div>
-            <div>
+            <div className={`header-top-menu`}>
                 <span>My page</span>
                 <span>login</span>
                 <span>Newsletter</span>
                 <span>Contact us,</span>
             </div>
-            <hr/>
         </div>
     );
 };
