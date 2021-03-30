@@ -9,15 +9,17 @@ const Header = () => {
 
     return (
         <div className={`header`}>
-            <div className={`header-logo`}>
-                <h1>로고</h1>
-            </div>
-            <div className={`header-search`}>
-                검색 부분
-            </div>
-            <div className={`header-top-menu`}>
+            <div className={`header-top-menu-left header-item`}>
                 <span>My page</span>
                 <span>login</span>
+            </div>
+            <div className={`header-logo header-item`}>
+                <h1>로고</h1>
+            </div>
+            <div className={`header-search header-item`}>
+                검색 부분
+            </div>
+            <div className={`header-top-menu-right header-item`}>
                 <span>Newsletter</span>
                 <span>Contact us,</span>
             </div>
