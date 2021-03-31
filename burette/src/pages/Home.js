@@ -5,16 +5,16 @@ const Home = () => {
         <div className={`home`}>
             <section className={`left-container home-section`}>
                 {/* 인터뷰 */}
-                <section>
-                    <div>
+                <section className={`home-grid`}>
+                    <div className={`home-grid-title`}>
                         <h2 className={`home-title`}>
                             Interview
                         </h2>
                     </div>
                 </section>
                 {/* 시리즈 저널 */}
-                <section>
-                    <div>
+                <section className={`home-grid`}>
+                    <div className={`home-grid-title`}>
                         <h2 className={`home-title`}>
                             series journal
                         </h2>
@@ -23,24 +23,24 @@ const Home = () => {
             </section>
             <section className={`mid-container home-section`}>
                 {/* 브랜드 밋업 */}
-                <section>
-                    <div>
+                <section className={`home-grid`}>
+                    <div className={`home-grid-title`}>
                         <h2 className={`home-title`}>
                             Brand Meet Up
                         </h2>
                     </div>
                 </section>
                 {/* C Question */}
-                <section>
-                    <div>
+                <section className={`home-grid`}>
+                    <div className={`home-grid-title`}>
                         <h2 className={`home-title`}>
                             C. Question
                         </h2>
                     </div>
                 </section>
                 {/* G Oversea */}
-                <section>
-                    <div>
+                <section className={`home-grid`}>
+                    <div className={`home-grid-title`}>
                         <h2 className={`home-title`}>
                             G. Oversea
                         </h2>
@@ -49,24 +49,24 @@ const Home = () => {
             </section>
             <section className={`right-container home-section`}>
                 {/* Column */}
-                <section>
-                    <div>
+                <section className={`home-grid`}>
+                    <div className={`home-grid-title`}>
                         <h2 className={`home-title`}>
                             Column
                         </h2>
                     </div>
                 </section>
                 {/* Info Desk */}
-                <section>
-                    <div>
+                <section className={`home-grid`}>
+                    <div className={`home-grid-title`}>
                         <h2 className={`home-title`}>
                             Info Desk
                         </h2>
                     </div>
                 </section>
                 {/* After Letter */}
-                <section>
-                    <div>
+                <section className={`home-grid`}>
+                    <div className={`home-grid-title`}>
                         <h2 className={`home-title`}>
                             After Letter
                         </h2>
