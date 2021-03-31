@@ -5,22 +5,14 @@ import './Menu.scss';
 
 // list of items
 const list = [
-  { name: 'Home', link: '/', exact: true },
-  { name: 'About', link: '/about', exact: true },
-  { name: 'About Foo', link: '/about/foo', exact: false },
-  { name: 'Posts', link: '/posts', exact: false },
-  { name: 'Home2', link: '/', exact: true },
-  { name: 'About2', link: '/about', exact: true },
-  { name: 'About Foo2', link: '/about/foo', exact: false },
-  { name: 'Posts2', link: '/posts', exact: false },
-  { name: 'Home3', link: '/', exact: true },
-  { name: 'About3', link: '/about', exact: true },
-  { name: 'About Foo3', link: '/about/foo', exact: false },
-  { name: 'Posts3', link: '/posts', exact: false },
-  { name: 'Home4', link: '/', exact: true },
-  { name: 'About4', link: '/about', exact: true },
-  { name: 'About Foo4', link: '/about/foo', exact: false },
-  { name: 'Posts4', link: '/posts', exact: false },
+  { name: 'INTERVIEW', link: '/', exact: true },
+  { name: 'SERIES JOURNAL', link: '/about', exact: true },
+  { name: 'BRAND MEET UP', link: '/about/foo', exact: false },
+  { name: 'C, QUESTION', link: '/posts', exact: false },
+  { name: 'G, OVERSEA', link: '/', exact: true },
+  { name: 'COLUMN', link: '/about', exact: true },
+  { name: 'INFO DESK', link: '/about/foo', exact: false },
+  { name: 'AFTER DESK', link: '/posts', exact: false }
 ];
 
 const MenuItem = ({text, link, exact, selected}) => {

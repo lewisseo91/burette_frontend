@@ -3,7 +3,7 @@ import "./Home.scss";
 const Home = () => {
     return (
         <div className={`home`}>
-            <section className={`left-container`}>
+            <section className={`left-container home-section`}>
                 {/* 인터뷰 */}
                 <section>
                     <div>
@@ -21,7 +21,7 @@ const Home = () => {
                     </div>
                 </section>
             </section>
-            <section className={`mid-container`}>
+            <section className={`mid-container home-section`}>
                 {/* 브랜드 밋업 */}
                 <section>
                     <div>
@@ -47,7 +47,7 @@ const Home = () => {
                     </div>
                 </section>
             </section>
-            <section className={`right-container`}>
+            <section className={`right-container home-section`}>
                 {/* Column */}
                 <section>
                     <div>
