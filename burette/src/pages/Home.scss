@@ -1,0 +1,22 @@
+.home {
+    display: flex;
+}
+
+.left-container {
+    flex: 1;
+    border-right: 1px solid #000;
+}
+
+.mid-container {
+    flex: 2;
+}
+
+.right-container {
+    flex: 1;
+    border-left: 1px solid #000;
+}
+
+.home-title {
+    text-transform: uppercase;
+    text-align: center;
+}
