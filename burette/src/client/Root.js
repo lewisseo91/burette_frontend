@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Header from '../components/Header';
 import HeaderCategory from '../components/HeaderCategory';
 import Menu from '../components/Menu';
+import Quote from '../components/Quote';
 import App from '../shared/App';
 
 const Root = () => (
@@ -10,6 +11,7 @@ const Root = () => (
         <Header></Header>
         <HeaderCategory></HeaderCategory>
         <Menu></Menu>
+        <Quote></Quote>
         <App/>
     </BrowserRouter>
 );
