@@ -1,4 +1,4 @@
-.home {
+.home-grid-total {
     display: flex;
     border-bottom: 1px solid #000;
 }
@@ -34,6 +34,6 @@
         font-weight: 700;
     }
     .home-title:first-child {
-        margin-top: 10px; // FIXME: 수정해야 함
+        margin-top: 10px; // FIXME: 나중에 수정해야 함
     }
 }
