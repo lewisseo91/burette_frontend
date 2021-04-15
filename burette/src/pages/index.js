@@ -6,3 +6,4 @@ export { default as Interview } from './Interview';
 export { default as Conference } from './Conference';;
 export { default as Stores } from './Stores';
 export { default as Store } from './Store';
+export { default as Contactus } from './Contactus';

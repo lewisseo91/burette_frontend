@@ -1,3 +1,5 @@
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Home.scss";
 
 const Home = () => {
@@ -55,6 +57,10 @@ const Home = () => {
                             <h2 className={`home-title`}>
                                 Column
                             </h2>
+                        </div>
+                        <div className={`home-grid-content`}>
+                            <FontAwesomeIcon icon={faQuoteLeft} />
+                            <FontAwesomeIcon icon={faQuoteRight} />
                         </div>
                     </section>
                     {/* Info Desk */}

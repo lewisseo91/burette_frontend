@@ -1,9 +1,19 @@
+$site-main-quote-color: #868686;
+$site-main-quote-height: 50px;
+$site-main-quote-letterspacing: 2.5px;
+
 .quote {
     display: flex;
     align-items: center;
     text-align: center;
     border-bottom: 3px double #000;
+    color: $site-main-quote-color;
+    height: $site-main-quote-height;
+    letter-spacing: $site-main-quote-letterspacing;
     q {
         flex: 1;
+        &:before, &:after {
+            content: " ";
+        }
     }
 }
