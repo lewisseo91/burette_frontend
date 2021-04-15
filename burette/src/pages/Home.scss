@@ -1,0 +1,39 @@
+.home-grid-total {
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.home-section {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.left-container {
+    flex: 1;
+    border-right: 1px solid #000;
+}
+
+.mid-container {
+    flex: 2;
+}
+
+.right-container {
+    flex: 1;
+    border-left: 1px solid #000;
+}
+
+.home-grid {
+    // margin: 20px 0;
+}
+
+.home-grid-title {
+    border-bottom: 1px solid #000;
+    .home-title {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+    }
+    .home-title:first-child {
+        margin-top: 10px; // FIXME: 나중에 수정해야 함
+    }
+}
