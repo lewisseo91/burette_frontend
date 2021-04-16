@@ -4,13 +4,16 @@
 }
 
 .home-section {
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 0 10px;
+    .home-grid:first-child {
+        margin-top: -5px;
+    }
 }
 
 .left-container {
     flex: 1;
-    border-right: 1px solid #000;
+    border-right: 2px solid #000;
 }
 
 .mid-container {
@@ -19,7 +22,7 @@
 
 .right-container {
     flex: 1;
-    border-left: 1px solid #000;
+    border-left: 2px solid #000;
 }
 
 .home-grid {
@@ -27,13 +30,43 @@
 }
 
 .home-grid-title {
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     .home-title {
         text-transform: uppercase;
         text-align: center;
         font-weight: 700;
+        letter-spacing: 2.5px;
+        margin: 10px;
     }
     .home-title:first-child {
         margin-top: 10px; // FIXME: 나중에 수정해야 함
+    }
+}
+
+.home-grid-content {
+    padding: 5px 0;
+    border-bottom: 2px solid #000;
+    .home-grid-content-thumbnail {
+
+    }
+    .home-grid-content-body {
+        .home-grid-content-subTitle {
+            display: flex;
+            .home-grid-content-phraseFirst {
+                flex: 2;
+                font-size: 3.5rem;
+                font-weight: 800;
+            }
+            .home-grid-content-phrase {
+                flex: 10;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-start;
+                .home-grid-content-subTitle {
+                    font-size: 0.85rem;
+                }
+            }
+        }
     }
 }

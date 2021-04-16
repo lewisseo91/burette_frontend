@@ -22,7 +22,7 @@ const Header = () => {
             <div className={`header-logo header-item`}>
                 <div>
                     <a href="/">
-                        <h1>BURETTE</h1>
+                        <div className={`header-logo-content`}>BURETTE</div>
                     </a>
                 </div>
             </div>

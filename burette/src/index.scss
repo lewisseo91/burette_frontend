@@ -1,6 +1,26 @@
 $red : #ff0000;
 $background-theme-color: #f4f4f4;
 
+@font-face {
+  font-family: 'Burette Basic';
+  src: url('./fonts/BuretteBasic-Regular.woff2') format('woff2'),
+      url('./fonts/BuretteBasic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Burette';
+  src: url('./fonts/Burette-Regular.woff2') format('woff2'),
+      url('./fonts/Burette-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 
 body {
   margin: 0;
@@ -20,4 +40,9 @@ code {
 #root {
   max-width: 1200px;
   margin: auto;
+}
+
+.res-img {
+  max-width: 100%;
+  height: auto;
 }

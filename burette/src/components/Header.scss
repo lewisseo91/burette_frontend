@@ -2,17 +2,34 @@
     display: flex;
     align-items: center;
     border-bottom: 2px solid #000;
+    padding: 20px 0;
 
     .header-item {
         flex: 1;
     }
+
+    .header-logo {
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .header-logo-content {
+            font-family: 'Burette';
+            font-style: normal;
+            font-size: 70px;
+            font-weight: 400;
+        }
+    }
     
     .header-top-menu-left {
         display: flex;
+        justify-content: flex-start;
     }
     
     .header-top-menu-right {
         display: flex;
+        justify-content: flex-end;
     }
     
     .header-search {
