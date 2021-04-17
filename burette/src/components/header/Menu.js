@@ -12,7 +12,8 @@ const list = [
   { name: 'G, OVERSEA', link: '/', exact: true },
   { name: 'COLUMN', link: '/about', exact: true },
   { name: 'INFO DESK', link: '/about/foo', exact: false },
-  { name: 'AFTER DESK', link: '/posts', exact: false }
+  { name: 'AFTER DESK', link: '/posts', exact: false },
+  { name: 'WE.', link: '/about', exact: false }
 ];
 
 const MenuItem = ({text, link, exact, selected}) => {
