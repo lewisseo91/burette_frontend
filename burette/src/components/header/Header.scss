@@ -31,6 +31,9 @@ $site-main-hover-color-mint : #2ecc7d;
             font-size: 70px;
             font-weight: 400;
         }
+        .header-logo-content:hover {
+            text-shadow: 2px 2px $site-main-hover-color-mint;
+        }
     }
     
     .header-top-menu-left {
