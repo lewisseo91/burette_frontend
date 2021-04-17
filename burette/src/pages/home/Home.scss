@@ -1,3 +1,5 @@
+// General
+$home-grid-newsletter-background-color: #d4d4d4;
 .home-grid-total {
     display: flex;
     border-bottom: 1px solid #000;
@@ -73,6 +75,8 @@
             display: flex;
             .home-grid-content-phraseFirst {
                 flex: 2;
+                display: flex;
+                justify-content: flex-end;
                 font-size: 3.5rem;
                 font-weight: 800;
             }
@@ -83,6 +87,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 .home-grid-content-phrase-subtitle {
+                    margin-top: 5%;
                     font-size: 0.85rem;
                 }
                 .subtitle-style2 {
@@ -105,24 +110,26 @@
                 -webkit-box-orient: vertical;
             }
         }
-        .home-grid-content-tags {
-            // display: flex;
-            // flex-wrap: wrap;
-            word-break: break-all;
-            .home-grid-content-tag {
-                // flex: 0 0 calc(50% - 22px);
-                display: inline-block;
-                border: 1px solid #000;
-                background: white;
-                margin-top: 5px;
-                margin-right: 5px;
-                padding: 0 10px;
-                // word-break: break-all;
-            }
-        }
     }
 }
 
+.home-grid-content-tags {
+    // display: flex;
+    // flex-wrap: wrap;
+    word-break: break-all;
+    .home-grid-content-tag {
+        // flex: 0 0 calc(50% - 22px);
+        display: inline-block;
+        border: 1px solid #000;
+        background: white;
+        margin-top: 5px;
+        margin-right: 5px;
+        padding: 0 10px;
+        // word-break: break-all;
+    }
+}
+
+// CQuestion
 .grid-style-question {
     display: flex;
     .home-grid-content-body {
@@ -138,6 +145,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-left: 5px;
     }
 }
 
@@ -150,6 +158,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        .home-grid-content-subtitle {
+            .home-grid-content-phrase {
+                .home-grid-content-phraseRest {
+                    font-weight: 800;
+                }
+            }
+        }
     }
     .home-grid-content-thumbnail {
         order: 2;
@@ -157,5 +172,112 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-left: 5px;
     }
+}
+
+// Column
+.grid-style-column {
+    padding: 5px 0;
+    .home-grid-content-header {
+        display: flex;
+        .home-grid-content-header-quote {
+            flex: 0 0 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 5px;
+            svg {
+                font-size: 11.5vw;
+            }
+        }
+        .home-grid-content-header-subtitle {
+            flex: 0 0 50%;
+            pre {
+                margin: 0;
+                font-size: 2rem; // 프로토 타입 용
+                white-space: pre-wrap; // 프로토 타입 용 
+            }
+        }
+    }
+    .home-grid-content-body {
+        padding: 5px 0;
+    }
+    .home-grid-content-footer {
+        display: flex;
+        .home-grid-content-footer-subtitle {
+            flex: 0 0 50%;
+            pre {
+                margin: 0;
+                font-size: 1.8rem; // 프로토 타입 용
+                white-space: pre-wrap; // 프로토 타입 용
+            }
+        }
+        .home-grid-content-footer-quote {
+            flex: 0 0 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            // padding: 5px;
+            svg {
+                font-size: 11.5vw;
+            }
+        }
+    }
+}
+
+// Infodesk
+.grid-style-infodesk {
+    .home-grid-content-body {
+        .home-grid-content-list-infos {
+            list-style-type: circle;
+            .home-grid-content-list-info::marker {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// AfterLetter
+.grid-style-afterletter {
+    .grid-style-afterletter-list {
+        .grid-style-afterletter-article {
+            display: flex;
+            &:not(:last-child) {
+                border-bottom: 2px solid #000;
+            }
+            .grid-style-afterletter-article-thumbnail {
+                flex: 40%;
+            }
+            .grid-style-afterletter-article-body {
+                flex: 60%;
+                padding-left: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-around;
+                .grid-style-afterletter-article-subtitle {
+                    .grid-style-afterletter-article-subtitle-txt {
+                        font-size: 1rem;
+                        font-weight: 800;
+                        letter-spacing: -1.5px;
+                    }
+                }
+                .grid-style-afterletter-article-context {
+                    .home-grid-content-context-txt {
+                        -webkit-line-clamp: 2; /* number of lines to show */
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Newsletter
+.home-news-subscribe {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background: $home-grid-newsletter-background-color;
+    text-transform: uppercase;
 }
