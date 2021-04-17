@@ -11,33 +11,37 @@ const Header = () => {
 
     return (
         <div className={`header`}>
-            <div className={`header-top-menu-left header-item`}>
-                <div>
-                    <FontAwesomeIcon icon={faNewspaper} />Newsletter
+            <div className={`header-top-menu-left header-items`}>
+                <div className={`header-item cursor-pointer`}>
+                    <span className={`header-item-icon`}><FontAwesomeIcon icon={faNewspaper} /></span>
+                    <span className={`header-item-txt`}>Newsletter</span>
                 </div>
-                <div>
-                    <FontAwesomeIcon icon={faCommentDots} />Contact us,
+                <div className={`header-item cursor-pointer`}>
+                    <span className={`header-item-icon`}><FontAwesomeIcon icon={faCommentDots} /></span>
+                    <span className={`header-item-txt`}>Contact us,</span>
                 </div>
             </div>
-            <div className={`header-logo header-item`}>
-                <div>
+            <div className={`header-logo header-items`}>
+                <div className={`header-item cursor-pointer`}>
                     <a href="/">
-                        <div className={`header-logo-content`}>BURETTE</div>
+                        <span className={`header-logo-content`}>BURETTE</span>
                     </a>
                 </div>
             </div>
-            <div className={`header-search header-item`}>
+            <div className={`header-search header-items`}>
                 <div className={`header-search-bar`}>
                     <FontAwesomeIcon className={`header-search-bar-icon`} icon={faSearch} />
                     <input className={`header-search-bar-inp`} type="text" placeholder={`검색어를 입력 해 주세요.`}/>
                 </div>
             </div>
-            <div className={`header-top-menu-right header-item`}>
-                <div>
-                    <FontAwesomeIcon icon={faUser} />My page
+            <div className={`header-top-menu-right header-items`}>
+                <div className={`header-item cursor-pointer`}>
+                    <span className={`header-item-icon`}><FontAwesomeIcon icon={faUser} /></span>
+                    <span className={`header-item-txt`}>My page</span>
                 </div>
-                <div>
-                    <FontAwesomeIcon icon={faDoorOpen} />login
+                <div className={`header-item cursor-pointer`}>
+                    <span className={`header-item-icon`}><FontAwesomeIcon icon={faDoorOpen} /></span>
+                    <span className={`header-item-txt`}>Login</span>
                 </div>
             </div>
         </div>

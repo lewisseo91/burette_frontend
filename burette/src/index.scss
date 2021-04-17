@@ -1,5 +1,6 @@
 $red : #ff0000;
 $background-theme-color: #f4f4f4;
+$site-main-hover-color-mint : #2ecc7d;
 
 @font-face {
   font-family: 'Burette Basic';
@@ -45,4 +46,18 @@ code {
 .res-img {
   max-width: 100%;
   height: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.gray-masking {
+  filter: grayscale(100%);
+}
+.gray-masking:hover {
+  filter : none;
+}
+
+.hover-mint:hover {
+  color : $site-main-hover-color-mint;
 }

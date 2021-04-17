@@ -11,7 +11,7 @@ const AfterLetter = () => {
                 <div className={`home-grid-content-body`}>
                     <div className={`grid-style-afterletter-list`}>
                         <div className={`grid-style-afterletter-article`}>
-                            <div className={`grid-style-afterletter-article-thumbnail`}>
+                            <div className={`grid-style-afterletter-article-thumbnail cursor-pointer gray-masking`}>
                                 <img className={`res-img`} src="./images/ex3.jpg" alt="ex3"/>
                             </div>
                             <div className={`grid-style-afterletter-article-body`}>
@@ -30,7 +30,7 @@ const AfterLetter = () => {
                             </div>
                         </div>
                         <div className={`grid-style-afterletter-article`}>
-                            <div className={`grid-style-afterletter-article-thumbnail`}>
+                            <div className={`grid-style-afterletter-article-thumbnail cursor-pointer gray-masking`}>
                                 <img className={`res-img`} src="./images/ex3.jpg" alt="ex3"/>
                             </div>
                             <div className={`grid-style-afterletter-article-body`}>
@@ -49,7 +49,7 @@ const AfterLetter = () => {
                             </div>
                         </div>
                         <div className={`grid-style-afterletter-article`}>
-                            <div className={`grid-style-afterletter-article-thumbnail`}>
+                            <div className={`grid-style-afterletter-article-thumbnail cursor-pointer gray-masking`}>
                                 <img className={`res-img`} src="./images/ex3.jpg" alt="ex3"/>
                             </div>
                             <div className={`grid-style-afterletter-article-body`}>

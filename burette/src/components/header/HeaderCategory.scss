@@ -1,7 +1,7 @@
 $background-header-category-color-top: #fff;
 $background-header-category-height: 35px;
 $site-main-font-color-black : #231815;
-$site-main-hover-color-green : #2ecc7d;
+$site-main-hover-color-mint : #2ecc7d;
 $site-main-font-hover-color-white : #fff;
 
 
@@ -25,7 +25,7 @@ $site-main-font-hover-color-white : #fff;
         }
     }
     .category-item:hover {
-        background: $site-main-hover-color-green;
+        background: $site-main-hover-color-mint;
         a {
             color: $site-main-font-hover-color-white;
             .menu-item {

@@ -7,7 +7,7 @@ const Interview = () => {
                 </h4>
             </div>
             <div className={`home-grid-content`}>
-                <div className={`home-grid-content-thumbnail`}>
+                <div className={`home-grid-content-thumbnail cursor-pointer gray-masking`}>
                     <img className={`res-img`} src="./images/ex1.png" alt="ex1"/>
                 </div>
                 <div className={`home-grid-content-body`}>

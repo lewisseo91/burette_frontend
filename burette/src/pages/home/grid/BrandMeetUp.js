@@ -1,6 +1,6 @@
 const BrandMeetUp = () => {
     return (
-        <section className={`home-grid`}>
+        <section className={`home-grid cursor-pointer`}>
             <div className={`home-grid-title`}>
                 <h4 className={`home-title`}>
                     Brand Meet Up
@@ -18,7 +18,7 @@ const BrandMeetUp = () => {
                             </span>
                         </div>
                     </div>
-                    <div className={`home-grid-content-thumbnail-img`}>
+                    <div className={`home-grid-content-thumbnail-img gray-masking`}>
                         <img className={`res-img`} src="./images/ex3.jpg" alt="ex3"/>
                     </div>
                 </div>

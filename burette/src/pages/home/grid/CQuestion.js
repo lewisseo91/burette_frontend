@@ -7,7 +7,7 @@ const CQuestion = () => {
                 </h4>
             </div>
             <div className={`home-grid-content grid-style-question`}>
-                <div className={`home-grid-content-thumbnail`}>
+                <div className={`home-grid-content-thumbnail cursor-pointer gray-masking`}>
                     <img className={`res-img`} src="./images/ex2.jpg" alt="ex2"/>
                 </div>
                 <div className={`home-grid-content-body`}>

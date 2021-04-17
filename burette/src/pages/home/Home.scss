@@ -1,5 +1,7 @@
 // General
 $home-grid-newsletter-background-color: #d4d4d4;
+$site-main-hover-color-mint : #2ecc7d;
+
 .home-grid-total {
     display: flex;
     border-bottom: 1px solid #000;
@@ -58,6 +60,7 @@ $home-grid-newsletter-background-color: #d4d4d4;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            z-index: 2;
             .home-grid-content-thumbnail-subtitle-phrase {
                 letter-spacing: -2px;
             }
@@ -181,14 +184,16 @@ $home-grid-newsletter-background-color: #d4d4d4;
     padding: 5px 0;
     .home-grid-content-header {
         display: flex;
+        flex-wrap: wrap;
         .home-grid-content-header-quote {
             flex: 0 0 50%;
             display: flex;
             align-items: flex-end;
-            justify-content: center;
-            padding: 5px;
+            justify-content: flex-end;
+            // padding: 5px;
             svg {
-                font-size: 11.5vw;
+                width: 100%;
+                height: 100%;
             }
         }
         .home-grid-content-header-subtitle {
@@ -205,6 +210,7 @@ $home-grid-newsletter-background-color: #d4d4d4;
     }
     .home-grid-content-footer {
         display: flex;
+        flex-wrap: wrap;
         .home-grid-content-footer-subtitle {
             flex: 0 0 50%;
             pre {
@@ -217,12 +223,16 @@ $home-grid-newsletter-background-color: #d4d4d4;
             flex: 0 0 50%;
             display: flex;
             align-items: flex-end;
-            justify-content: center;
+            justify-content: flex-start;
             // padding: 5px;
             svg {
-                font-size: 11.5vw;
+                width: 100%;
+                height: 100%;
             }
         }
+    }
+    &:hover .home-grid-content-header-quote, &:hover .home-grid-content-footer-quote {
+        color: $site-main-hover-color-mint;
     }
 }
 

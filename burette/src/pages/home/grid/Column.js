@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Column = () => {
     return (
-        <section className={`home-grid`}>
+        <section className={`home-grid cursor-pointer`}>
             <div className={`home-grid-title`}>
                 <h4 className={`home-title`}>
                     Column

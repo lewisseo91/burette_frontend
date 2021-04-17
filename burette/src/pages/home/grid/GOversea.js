@@ -6,7 +6,7 @@ const GOversea = () => {
                     G. Oversea
                 </h4>
             </div>
-            <div className={`home-grid-content grid-style-oversea`}>
+            <div className={`home-grid-content grid-style-oversea cursor-pointer gray-masking`}>
                 <div className={`home-grid-content-thumbnail`}>
                     <img className={`res-img`} src="./images/ex4.jpg" alt="ex4"/>
                 </div>
