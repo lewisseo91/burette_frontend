@@ -1,8 +1,8 @@
 import React from 'react';
 import queryString from 'query-string';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './Interview.scss';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import './Interview.scss';
 
 const Interview = ({location, match}) => {
 
