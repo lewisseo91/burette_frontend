@@ -27,7 +27,7 @@ const Contactus = ({location, match}) => {
                     <textarea className={`contactus-content-element-txtarea`} name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div className={`contactus-content-element form-element-submit`}>
-                    <button className={`contactus-content-element-submit-btn cursor-pointer`} type="submit">제출</button>
+                    <button className={`contactus-content-element-submit-btn cursor-pointer`} type="submit">보내기</button>
                 </div>
             </form>
             <section className={`contactus-footer`}>
