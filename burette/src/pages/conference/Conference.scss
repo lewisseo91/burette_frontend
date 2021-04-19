@@ -1,0 +1,120 @@
+$site-main-font-color-lightgray : #b5b5b5;
+$site-main-font-color-gray : #5f5f5f;
+
+.conference {
+    .conference-preview {
+        display: flex;
+        max-height: 10vh;
+        padding: 1vh 0;
+        border-bottom: 2px solid #000;
+        .conference-preview-prev {
+            position: relative;
+            overflow: hidden;
+            padding-right: 1vw;
+            .conference-preview-prev-thumbnail {
+                opacity: 0.5;
+            }
+            .conference-preview-prev-title {
+                position: absolute;
+                top: 1vh;
+                left: 2vw;
+                .conference-preview-prev-title-txt {
+                    font-size: 1.5rem;
+                    letter-spacing: -2px;
+                }
+            }
+        }
+        .conference-preview-next {
+            position: relative;
+            overflow: hidden;
+            padding-left: 1vw;
+            .conference-preview-next-thumbnail {
+                opacity: 0.5;
+            }
+            .conference-preview-next-title {
+                position: absolute;
+                top: 1vh;
+                left: 2vw;
+                .conference-preview-next-title-txt {
+                    font-size: 1.5rem;
+                    letter-spacing: -2px;
+                }
+            }
+        }
+    }
+    .conference-content {
+        .conference-content-header {
+            margin-top: 2vh;
+            text-align: center;
+            .conference-content-title {
+                .conference-content-title-txt {
+                    font-size: 1.1rem;
+                    letter-spacing: -2px;
+                    font-weight: 600;
+                }
+            }
+            .conference-content-subtitle {
+                margin-top: 10px;
+                .conference-content-subtitle-txt {
+                    font-size: 2rem;
+                    letter-spacing: -2px;
+                    font-weight: 800;
+                }
+            }
+        }
+        .conference-content-body {
+            text-align: center;
+            margin-top: 3vh;
+            .conference-content-body-profile-pic {
+                max-width: 150px;
+                margin: auto;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .conference-content-body-nickname {
+                font-size: 1rem;
+                letter-spacing: -1px;
+                font-weight: 800;
+            }
+        }
+        .conference-content-body-grid {
+            .conference-content-body-grid-chats-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                list-style-type: none;
+                padding: 0;
+                margin: 30px 0;
+                .conference-content-body-grid-chat-info-wrapper {
+                    flex: 0 0 calc(33% - 60px);
+                    background: white;
+                    padding: 30px;
+                    margin-top: 30px;
+                    border-radius: 10px;
+                    .conference-content-body-grid-chat-info {
+                        border-top: 1px solid $site-main-font-color-lightgray;
+                        border-bottom: 1px solid $site-main-font-color-lightgray;
+                        .conference-content-body-grid-chat-info-title {
+                            border-bottom: 1px solid $site-main-font-color-lightgray;
+                            padding: 0.5vh 0;
+                            .conference-content-body-grid-chat-info-title-txt {
+                                font-size: 0.9rem;
+                                letter-spacing: -2px;
+                                color: $site-main-font-color-gray;
+                            }
+                        }
+                        .conference-content-body-grid-chat-info-content {
+                            padding: 0.5vh 0;
+                            .conference-content-body-grid-chat-info-content-txt {
+                                font-size: 0.9rem;
+                                letter-spacing: -2px;
+                                color: $site-main-font-color-gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
