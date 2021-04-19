@@ -4,9 +4,9 @@ import './HeaderCategory.scss';
 
 // list of items
 const list = [
-  { name: 'Conference', link: '/', exact: true },
-  { name: 'Valley', link: '/about', exact: true },
-  { name: 'Store', link: '/about/foo', exact: false },
+  { name: 'Conference', link: '/conference', exact: true },
+  { name: 'Valley', link: '/', exact: true },
+  { name: 'Store', link: '/store', exact: false },
 ];
 
 const CategoryMenu = () => {

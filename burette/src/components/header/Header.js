@@ -13,12 +13,16 @@ const Header = () => {
         <div className={`header`}>
             <div className={`header-top-menu-left header-items`}>
                 <div className={`header-item cursor-pointer`}>
-                    <span className={`header-item-icon`}><FontAwesomeIcon icon={faNewspaper} /></span>
-                    <span className={`header-item-txt`}>Newsletter</span>
+                    <a href="/newsletter">
+                        <span className={`header-item-icon`}><FontAwesomeIcon icon={faNewspaper} /></span>
+                        <span className={`header-item-txt`}>Newsletter</span>
+                    </a>
                 </div>
                 <div className={`header-item cursor-pointer`}>
-                    <span className={`header-item-icon`}><FontAwesomeIcon icon={faCommentDots} /></span>
-                    <span className={`header-item-txt`}>Contact us,</span>
+                    <a href="/contact">
+                        <span className={`header-item-icon`}><FontAwesomeIcon icon={faCommentDots} /></span>
+                        <span className={`header-item-txt`}>Contact us,</span>
+                    </a>
                 </div>
             </div>
             <div className={`header-logo header-items`}>
@@ -36,12 +40,16 @@ const Header = () => {
             </div>
             <div className={`header-top-menu-right header-items`}>
                 <div className={`header-item cursor-pointer`}>
-                    <span className={`header-item-icon`}><FontAwesomeIcon icon={faUser} /></span>
-                    <span className={`header-item-txt`}>My page</span>
+                    <a href="/profile">
+                        <span className={`header-item-icon`}><FontAwesomeIcon icon={faUser} /></span>
+                        <span className={`header-item-txt`}>My page</span>
+                    </a>
                 </div>
                 <div className={`header-item cursor-pointer`}>
-                    <span className={`header-item-icon`}><FontAwesomeIcon icon={faDoorOpen} /></span>
-                    <span className={`header-item-txt`}>Login</span>
+                    <a href="/login">
+                        <span className={`header-item-icon`}><FontAwesomeIcon icon={faDoorOpen} /></span>
+                        <span className={`header-item-txt`}>Login</span>
+                    </a>
                 </div>
             </div>
         </div>

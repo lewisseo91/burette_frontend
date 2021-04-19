@@ -6,14 +6,14 @@ import './Menu.scss';
 // list of items
 const list = [
   { name: 'INTERVIEW', link: '/', exact: true },
-  { name: 'SERIES JOURNAL', link: '/about', exact: true },
-  { name: 'BRAND MEET UP', link: '/about/foo', exact: false },
-  { name: 'C, QUESTION', link: '/posts', exact: false },
+  { name: 'SERIES JOURNAL', link: '/', exact: true },
+  { name: 'BRAND MEET UP', link: '/', exact: false },
+  { name: 'C, QUESTION', link: '/', exact: false },
   { name: 'G, OVERSEA', link: '/', exact: true },
-  { name: 'COLUMN', link: '/about', exact: true },
-  { name: 'INFO DESK', link: '/about/foo', exact: false },
-  { name: 'AFTER DESK', link: '/posts', exact: false },
-  { name: 'WE.', link: '/about', exact: false }
+  { name: 'COLUMN', link: '/', exact: true },
+  { name: 'INFO DESK', link: '/', exact: false },
+  { name: 'AFTER DESK', link: '/', exact: false },
+  { name: 'WE.', link: '/', exact: false }
 ];
 
 const MenuItem = ({text, link, exact, selected}) => {

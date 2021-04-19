@@ -19,7 +19,7 @@ $site-main-font-color-gray : #5f5f5f;
                 top: 1vh;
                 left: 2vw;
                 .conference-preview-prev-title-txt {
-                    font-size: 2.5vw;
+                    font-size: 1.5rem;
                     letter-spacing: -2px;
                 }
             }
@@ -36,7 +36,7 @@ $site-main-font-color-gray : #5f5f5f;
                 top: 1vh;
                 left: 2vw;
                 .conference-preview-next-title-txt {
-                    font-size: 2.5vw;
+                    font-size: 1.5rem;
                     letter-spacing: -2px;
                 }
             }
@@ -85,7 +85,7 @@ $site-main-font-color-gray : #5f5f5f;
                 justify-content: space-between;
                 list-style-type: none;
                 padding: 0;
-                margin: 0;
+                margin: 30px 0;
                 .conference-content-body-grid-chat-info-wrapper {
                     flex: 0 0 calc(33% - 60px);
                     background: white;
