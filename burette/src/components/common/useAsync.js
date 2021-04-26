@@ -31,14 +31,14 @@ function reducer(state, action) {
     }
 }
 
-function useAsync(callback, deps = []) {
+function useAsync(callback, deps = [], skip = false) {
     const [state, dispatch] = useReducer(reducer, {
         loading: false,
         data: null,
         error: null
     })
 
-    const fetchData = async () => {
+    const fetchData = useCallback( async () => {
         dispatch({ type: `LOADING`});
         try {
             const data = await callback();
@@ -46,9 +46,12 @@ function useAsync(callback, deps = []) {
         } catch (e) {
             dispatch({ type: `ERROR`, error: e});
         }
-    }
+    }, [callback]);
 
     useEffect(() => {
+        if(skip) {
+            return;
+        }
         fetchData();
     }, deps);
 
