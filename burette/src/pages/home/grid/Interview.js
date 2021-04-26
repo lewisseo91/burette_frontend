@@ -1,4 +1,24 @@
+import useAsync from "../../../components/common/useAsync";
+
+async function getArticles() {
+    const response = await axios.get("http://localhost:8091/article/test");
+    return response.data;
+}
+
 const Interview = () => {
+    const [state, refetch] = useAsync(getArticles());
+
+    const {loading, data: articles, error} = state;
+    if(loading) return (
+        <div>로딩 중</div>
+     );
+     
+    if(error) return (
+        <div>오류가 발생하였습니다.</div>
+     );
+    
+    // if(!articles) return null;
+    
     return (
         <section className={`home-grid`}>
             <div className={`home-grid-title`}>
