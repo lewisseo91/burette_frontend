@@ -1,7 +1,9 @@
 import useAsync from "../../../components/common/useAsync";
+import axios from 'axios';
 
 async function getArticles() {
-    const response = await axios.get("http://localhost:8091/article/test");
+    const response = await axios.get("http://localhost:8090/article/test");
+    console.log(response);
     return response.data;
 }
 

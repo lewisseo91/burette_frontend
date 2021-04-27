@@ -18,7 +18,7 @@ const list = [
 
 const MenuItem = ({text, link, exact, selected}) => {
   return (
-        <NavLink { ...exact ? 'exact' : ''} to={link}>
+        <NavLink exact={exact} to={link}>
             <div className={`menu-item ${selected ? 'active' : ''}`}>
                         {text}
             </div>

@@ -1,4 +1,4 @@
-import { useReducer, useEffect } from 'react';
+import { useReducer, useEffect, useCallback } from 'react';
 
 function reducer(state, action) {
     switch (action.type) {
@@ -21,7 +21,7 @@ function reducer(state, action) {
         case "ERROR":
             return (
                 {
-                    loading: flase,
+                    loading: false,
                     data: null,
                     error: action.error
                 }

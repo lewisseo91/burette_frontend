@@ -10,17 +10,15 @@ const list = [
 ];
 
 const CategoryMenu = () => {
-    return list.map(({name, link, exact}) => {
-        return (
-            <div className={`category-item`}>
-                <NavLink { ...exact ? 'exact' : ''} to={link}>
+    return list.map(({name, link, exact}, index) => 
+            <div className={`category-item`} key={index} data-index={index}>
+                <NavLink exact={exact} to={link}>
                     <div className={`menu-item`}>
                                 {name}
                     </div>
                 </NavLink>
             </div>
-        );
-    });
+    );
 }
 
 const HeaderCategory = () => {
