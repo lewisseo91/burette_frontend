@@ -1,4 +1,6 @@
-const SeriesJournal = () => {
+const SeriesJournal = ({initData}) => {
+    const {title, subTitle, contents, tags, thumbnails } = initData;
+    
     return (
         <section className={`home-grid`}>
             <div className={`home-grid-title`}>
@@ -14,17 +16,13 @@ const SeriesJournal = () => {
                     <div className={`home-grid-content-subtitle`}>
                         <div className={`home-grid-content-phrase`}>
                             <div className={`home-grid-content-phrase-subtitle subtitle-style2`}>
-                                리도 못가서 발병난다.
+                                {title}
                             </div>
                         </div>
                     </div>
                     <div className={`home-grid-content-context`}>
                         <span className={`home-grid-content-context-txt`}>
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
+                            {contents}
                         </span>
                     </div>
                     <div className={`home-grid-content-tags`}>

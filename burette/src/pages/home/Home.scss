@@ -186,10 +186,13 @@ $site-main-hover-color-mint : #2ecc7d;
         display: flex;
         flex-wrap: wrap;
         .home-grid-content-header-quote {
-            flex: 0 0 50%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
+            // flex: 0 0 50%;
+            // display: flex;
+            // align-items: flex-end;
+            // justify-content: flex-end;
+            display: block;
+            position: relative;
+            max-width: 30px;
             // padding: 5px;
             svg {
                 width: 100%;
@@ -197,7 +200,7 @@ $site-main-hover-color-mint : #2ecc7d;
             }
         }
         .home-grid-content-header-subtitle {
-            flex: 0 0 50%;
+            flex: 0 0 100%;
             pre {
                 margin: 0;
                 font-size: 2rem; // 프로토 타입 용
@@ -212,7 +215,7 @@ $site-main-hover-color-mint : #2ecc7d;
         display: flex;
         flex-wrap: wrap;
         .home-grid-content-footer-subtitle {
-            flex: 0 0 50%;
+            flex: 0 0 100%;
             pre {
                 margin: 0;
                 font-size: 1.8rem; // 프로토 타입 용
@@ -220,10 +223,14 @@ $site-main-hover-color-mint : #2ecc7d;
             }
         }
         .home-grid-content-footer-quote {
-            flex: 0 0 50%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
+            // flex: 0 0 50%;
+            // display: flex;
+            // align-items: flex-end;
+            // justify-content: flex-start;
+            display: block;
+            position: relative;
+            max-width: 30px;
+            margin-left: auto;
             // padding: 5px;
             svg {
                 width: 100%;

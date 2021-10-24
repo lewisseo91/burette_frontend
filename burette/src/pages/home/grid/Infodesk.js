@@ -1,4 +1,4 @@
-const Infodesk = () => {
+const Infodesk = ({initData}) => {
     return (
         <section className={`home-grid`}>
             <div className={`home-grid-title`}>
@@ -9,6 +9,7 @@ const Infodesk = () => {
             <div className={`home-grid-content grid-style-infodesk`}>
                 <div className={`home-grid-content-body`}>
                     <ul className={`home-grid-content-list-infos`}>
+                        {/* v1 fixed text infodesk category 따로 짜기 */}
                         <li className={`home-grid-content-list-info`}>
                             전시 소식
                         </li>

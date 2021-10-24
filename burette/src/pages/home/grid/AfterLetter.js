@@ -1,4 +1,4 @@
-const AfterLetter = () => {
+const AfterLetter = ({initData}) => {
     return(
         <section className={`home-grid`}>
             <div className={`home-grid-title`}>
@@ -11,6 +11,7 @@ const AfterLetter = () => {
                 <div className={`home-grid-content-body`}>
                     <div className={`grid-style-afterletter-list`}>
                         <div className={`grid-style-afterletter-article`}>
+                            {/* v1 fixed text after letter category 따로 짜기 */}
                             <div className={`grid-style-afterletter-article-thumbnail cursor-pointer gray-masking`}>
                                 <img className={`res-img`} src="./images/ex3.jpg" alt="ex3"/>
                             </div>

@@ -1,4 +1,6 @@
-const CQuestion = () => {
+const CQuestion = ({initData}) => {
+    const {title, subTitle, contents, tags, thumbnails } = initData;
+
     return (
         <section className={`home-grid`}>
             <div className={`home-grid-title`}>
@@ -14,10 +16,11 @@ const CQuestion = () => {
                     <div className={`home-grid-content-subtitle`}>
                         <div className={`home-grid-content-phrase`}>
                             <div className={`home-grid-content-phrase-subtitle subtitle-style3`}>
-                                <pre>
+                                {/* <pre>
                                     <b>컨텐츠</b>를 바라보는 <br/>
                                     <b>시각</b>에 대하여
-                                </pre>
+                                </pre> */}
+                                {title}
                             </div>
                         </div>
                     </div>

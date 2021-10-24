@@ -1,7 +1,9 @@
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Column = () => {
+const Column = ({initData}) => {
+    const {title, subTitle, contents, tags, thumbnails } = initData;
+
     return (
         <section className={`home-grid cursor-pointer`}>
             <div className={`home-grid-title`}>
@@ -15,31 +17,28 @@ const Column = () => {
                         <FontAwesomeIcon icon={faQuoteLeft} />
                     </div>
                     <div className={`home-grid-content-header-subtitle`}>
-                        <pre>
-                            <b>세상에 없던 가치</b><br />
-                            <b>브랜드에</b><br />
-                            <b>깃든 영혼</b><br />
-                            <b>브랜드의 실험정신</b>
-                        </pre>
+                        <h2>
+                            {/* 세상에 없던 가치 <br /> 
+                            브랜드에 깃든 영혼 <br />
+                            브랜드의 실험정신 */}
+                            {title}
+                        </h2>
                     </div>
                 </div>
                 <div className={`home-grid-content-body`}>
                     <div className={`home-grid-content-context`}>
                         <span className={`home-grid-content-context-txt`}>
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
+                            {contents}
                         </span>
                     </div>
                 </div>
                 <div className={`home-grid-content-footer`}>
                     <div className={`home-grid-content-footer-subtitle`}>
-                        <pre>
+                        {/* <pre>
                             <b>가까운 미래</b><br />
                             <b>보다 빠른 성장</b>
-                        </pre>
+                        </pre> */}
+                        {subTitle}
                     </div>
                     <div className={`home-grid-content-footer-quote`}>
                         <FontAwesomeIcon icon={faQuoteRight} />

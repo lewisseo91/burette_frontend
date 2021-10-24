@@ -1,4 +1,8 @@
-const GOversea = () => {
+const GOversea = ({initData}) => {
+    const {title, subTitle, contents, tags, thumbnails } = initData;
+    let firstStrSubTitle = subTitle.slice(0, 1);
+    let restStrSubTitle = subTitle.slice(1, subTitle.length);
+
     return (
         <section className={`home-grid`}>
             <div className={`home-grid-title`}>
@@ -13,24 +17,20 @@ const GOversea = () => {
                 <div className={`home-grid-content-body`}>
                     <div className={`home-grid-content-subtitle`}>
                         <div className={`home-grid-content-phraseFirst`}>
-                            <span>D</span>
+                            <span>{firstStrSubTitle}</span>
                         </div>
                         <div className={`home-grid-content-phrase`}>
                             <div className={`home-grid-content-phrase-subtitle subtitle-style1`}>
-                                <span>킥스타터에서 주목받는</span>
+                                <span>{title}</span>
                             </div>
                             <div className={`home-grid-content-phraseRest`}>
-                                <span>ESIGN TREND</span>
+                                <span>{restStrSubTitle}</span>
                             </div>
                         </div>
                     </div>
                     <div className={`home-grid-content-context`}>
                         <span className={`home-grid-content-context-txt`}>
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
-                            예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 예제 문장이에용/ 
+                            {contents}
                         </span>
                     </div>
                     <div className={`home-grid-content-tags`}>

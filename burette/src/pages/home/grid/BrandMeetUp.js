@@ -1,4 +1,6 @@
-const BrandMeetUp = () => {
+const BrandMeetUp = ({initData}) => {
+    const {title, subTitle, contents, tags, thumbnails } = initData;
+    
     return (
         <section className={`home-grid cursor-pointer`}>
             <div className={`home-grid-title`}>
@@ -10,11 +12,11 @@ const BrandMeetUp = () => {
                 <div className={`home-grid-content-thumbnail thumbnail-brand`}>
                     <div className={`home-grid-content-thumbnail-subtitle`}>
                         <div className={`home-grid-content-thumbnail-subtitle-phrase`}>
-                            케미컬 라이프 스타일 브랜드
+                            {title}
                         </div>
                         <div className={`home-grid-content-thumbnail-subtitle-name`}>
                             <span className={`home-grid-content-thumbnail-subtitle-text`}>
-                                익스플레인
+                                {subTitle}
                             </span>
                         </div>
                     </div>
