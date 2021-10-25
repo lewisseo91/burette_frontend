@@ -1,3 +1,5 @@
+import parse from 'html-react-parser';
+
 const SeriesJournal = ({initData}) => {
     const {title, subTitle, contents, tags, thumbnails } = initData;
     
@@ -21,9 +23,9 @@ const SeriesJournal = ({initData}) => {
                         </div>
                     </div>
                     <div className={`home-grid-content-context`}>
-                        <span className={`home-grid-content-context-txt`}>
-                            {contents}
-                        </span>
+                        <div className={`home-grid-content-context-txt`}>
+                            {parse(contents)}
+                        </div>
                     </div>
                     <div className={`home-grid-content-tags`}>
                         <span className={`home-grid-content-tag`}>

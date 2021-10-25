@@ -1,9 +1,9 @@
+import parse from 'html-react-parser';
+
 const Interview = ({initData}) => {
     const {title, subTitle, contents, tags, thumbnails } = initData;
-    console.log(title);
-    console.log(subTitle);
-    let firstStrSubTitle = subTitle.slice(0, 1);
-    let restStrSubTitle = subTitle.slice(1, subTitle.length);
+    let firstStrSubTitle = subTitle != null && subTitle.length > 0 ? subTitle.slice(0, 1) : null;
+    let restStrSubTitle = subTitle != null && subTitle.length > 0 ? subTitle.slice(1, subTitle.length) : null;
     
     return (
         <section className={`home-grid`}>
@@ -31,9 +31,9 @@ const Interview = ({initData}) => {
                         </div>
                     </div>
                     <div className={`home-grid-content-context`}>
-                        <span className={`home-grid-content-context-txt`}>
-                            {contents}
-                        </span>
+                        <div className={`home-grid-content-context-txt`}>
+                            {parse(contents)}
+                        </div>
                     </div>
                     <div className={`home-grid-content-tags`}>
                         <span className={`home-grid-content-tag`}>

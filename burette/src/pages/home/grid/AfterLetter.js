@@ -1,3 +1,5 @@
+import parse from 'html-react-parser';
+
 const AfterLetter = ({initData}) => {
     return(
         <section className={`home-grid`}>

@@ -1,5 +1,6 @@
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import parse from 'html-react-parser';
 
 const Column = ({initData}) => {
     const {title, subTitle, contents, tags, thumbnails } = initData;
@@ -28,7 +29,7 @@ const Column = ({initData}) => {
                 <div className={`home-grid-content-body`}>
                     <div className={`home-grid-content-context`}>
                         <span className={`home-grid-content-context-txt`}>
-                            {contents}
+                            {parse(contents)}
                         </span>
                     </div>
                 </div>

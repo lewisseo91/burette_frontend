@@ -1,7 +1,9 @@
+import parse from 'html-react-parser';
+
 const GOversea = ({initData}) => {
     const {title, subTitle, contents, tags, thumbnails } = initData;
-    let firstStrSubTitle = subTitle.slice(0, 1);
-    let restStrSubTitle = subTitle.slice(1, subTitle.length);
+    let firstStrSubTitle = subTitle != null && subTitle.length > 0 ? subTitle.slice(0, 1) : null;
+    let restStrSubTitle = subTitle != null && subTitle.length > 0 ? subTitle.slice(1, subTitle.length) : null;
 
     return (
         <section className={`home-grid`}>
@@ -30,7 +32,7 @@ const GOversea = ({initData}) => {
                     </div>
                     <div className={`home-grid-content-context`}>
                         <span className={`home-grid-content-context-txt`}>
-                            {contents}
+                            {parse(contents)}
                         </span>
                     </div>
                     <div className={`home-grid-content-tags`}>

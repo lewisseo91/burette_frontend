@@ -1,3 +1,5 @@
+import parse from 'html-react-parser';
+
 const CQuestion = ({initData}) => {
     const {title, subTitle, contents, tags, thumbnails } = initData;
 

@@ -14,15 +14,20 @@ const Home = () => {
     const [state, refetch] = useAsync(getArticles, []);
 
     const {loading, data: articles, error} = state;
-    
-    console.log(error);
-    console.log(state);
 
     if(loading) return (
         <div>로딩 중</div>
      );
 
-    if(!articles) return null;
+    if (error) {
+        return (
+            <div>에러가 발생했습니다.</div>
+        );
+    }
+
+    if(!articles || articles.length === 0) return null;
+
+    console.log(articles);
      
     return (
         <div className={`home`}>

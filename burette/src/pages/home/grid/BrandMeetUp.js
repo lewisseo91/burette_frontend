@@ -1,3 +1,5 @@
+import parse from 'html-react-parser';
+
 const BrandMeetUp = ({initData}) => {
     const {title, subTitle, contents, tags, thumbnails } = initData;
     
