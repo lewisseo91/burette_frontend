@@ -34,6 +34,10 @@ $site-main-hover-color-mint : #2ecc7d;
 
 .home-grid {
     // margin: 20px 0;
+    .home-link {
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 .home-grid-title {

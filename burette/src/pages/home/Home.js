@@ -15,9 +15,9 @@ const Home = () => {
 
     const {loading, data: articles, error} = state;
 
-    if(loading) return (
-        <div>로딩 중</div>
-     );
+    // if(loading) return (
+    //     <div>로딩 중</div>
+    //  );
 
     if (error) {
         return (
