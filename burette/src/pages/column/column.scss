@@ -1,0 +1,71 @@
+$site-main-font-color-lightgray : #b5b5b5;
+$site-main-font-color-gray : #5f5f5f;
+.column {
+    margin: 5vh 5vw 0 5vw;
+    .column-title {
+        font-size: 30px;
+        letter-spacing: -1px;
+        color: $site-main-font-color-gray;
+    }
+    .column-content-thumbnail {
+        margin-top: 3vh;
+    }
+    .column-comments {
+        margin-top: 3vh;
+        .column-comments-title {
+            padding-bottom: 1vh;
+            border-bottom: 2px solid $site-main-font-color-lightgray;
+            .column-comments-title-txt {
+                font-size: 25px;
+                font-weight: 400;
+                // color: $site-main-font-color-gray;
+            }
+        }
+        .column-comments-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            .column-comment-info {
+                display: flex;
+                color: $site-main-font-color-gray;
+                font-weight: 500;
+                padding: 5px;
+                border-bottom: 2px solid $site-main-font-color-lightgray;
+                .column-comment-info-profile {
+                    flex: 0 0 20%;
+                    .column-comment-info-icon {
+                        margin-right: 10px;
+                    }
+                }
+                .column-comment-info-content {
+                    flex: 0 0 80%;
+                    .column-comment-info-content-txt {
+    
+                    }
+                }
+            }
+        }
+    }
+    .column-preview {
+        margin-top: 3vh;
+        .column-preview-title {
+            padding-bottom: 1vh;
+            .column-preview-title-txt {
+                font-size: 25px;
+                font-weight: 400;
+                // color: $site-main-font-color-gray;
+            }
+        }
+        .column-previews-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+            .column-preview-info {
+                margin: 1vh 0;
+                background: $site-main-font-color-lightgray;
+                color: white;
+            }
+        }
+    }
+}
