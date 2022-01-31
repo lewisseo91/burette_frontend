@@ -1,7 +1,7 @@
 import parse from 'html-react-parser';
 import {Link} from 'react-router-dom';
 
-const Interview = ({initData}) => {
+const InterviewGrid = ({initData}) => {
     const {
         id,
         title,
@@ -66,4 +66,4 @@ const Interview = ({initData}) => {
     );
 }
 
-export default Interview;
+export default InterviewGrid;

@@ -1,9 +1,9 @@
-export { default as Interview } from './Interview';
-export { default as SeriesJournal } from './SeriesJournal';
-export { default as BrandMeetUp } from './BrandMeetUp';
-export { default as CQuestion } from './CQuestion';
-export { default as GOversea } from './GOversea';
-export { default as Column } from './Column';
-export { default as Infodesk } from './Infodesk';
-export { default as AfterLetter } from './AfterLetter';
+export { default as InterviewGrid } from './InterviewGrid';
+export { default as SeriesJournalGrid } from './SeriesJournalGrid';
+export { default as BrandMeetUpGrid } from './BrandMeetUpGrid';
+export { default as CQuestionGrid } from './CQuestionGrid';
+export { default as GOverseaGrid } from './GOverseaGrid';
+export { default as ColumnGrid } from './ColumnGrid';
+export { default as InfodeskGrid } from './InfodeskGrid';
+export { default as AfterLetterGrid } from './AfterLetterGrid';
 export { default as Newsletter } from './Newsletter';

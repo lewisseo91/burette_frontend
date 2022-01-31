@@ -1,6 +1,6 @@
 import parse from 'html-react-parser';
 
-const AfterLetter = ({initData}) => {
+const AfterLetterGrid = ({initData}) => {
     return(
         <section className={`home-grid`}>
             <div className={`home-grid-title`}>
@@ -77,4 +77,4 @@ const AfterLetter = ({initData}) => {
     );
 }
 
-export default AfterLetter;
+export default AfterLetterGrid;

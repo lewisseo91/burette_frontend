@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import parse from 'html-react-parser';
 import {Link} from 'react-router-dom';
 
-const Column = ({initData}) => {
+const ColumnGrid = ({initData}) => {
     const {
         id,
         title,
@@ -71,4 +71,4 @@ const Column = ({initData}) => {
     );
 }
 
-export default Column;
+export default ColumnGrid;

@@ -1,0 +1,156 @@
+$site-main-font-color-lightgray : #b5b5b5;
+$site-main-font-color-gray : #5f5f5f;
+
+.seriesjournal {
+    .seriesjournal-preview {
+        display: flex;
+        max-height: 10vh;
+        padding: 1vh 0;
+        border-bottom: 2px solid #000;
+        .seriesjournal-preview-prev {
+            position: relative;
+            overflow: hidden;
+            padding-right: 1vw;
+            .seriesjournal-preview-prev-thumbnail {
+                opacity: 0.5;
+            }
+            .seriesjournal-preview-prev-title {
+                position: absolute;
+                top: 1vh;
+                left: 2vw;
+                .seriesjournal-preview-prev-title-txt {
+                    font-size: 1.5rem;
+                    letter-spacing: -2px;
+                }
+            }
+        }
+        .seriesjournal-preview-next {
+            position: relative;
+            overflow: hidden;
+            padding-left: 1vw;
+            .seriesjournal-preview-next-thumbnail {
+                opacity: 0.5;
+            }
+            .seriesjournal-preview-next-title {
+                position: absolute;
+                top: 1vh;
+                left: 2vw;
+                .seriesjournal-preview-next-title-txt {
+                    font-size: 1.5rem;
+                    letter-spacing: -2px;
+                }
+            }
+        }
+    }
+    .seriesjournal-content {
+        .seriesjournal-content-header {
+            margin-top: 2vh;
+            text-align: center;
+            .seriesjournal-content-title {
+                .seriesjournal-content-title-txt {
+                    font-size: 1.1rem;
+                    letter-spacing: -2px;
+                    font-weight: 600;
+                }
+            }
+            .seriesjournal-content-subtitle {
+                margin-top: 10px;
+                .seriesjournal-content-subtitle-txt {
+                    font-size: 2rem;
+                    letter-spacing: -2px;
+                    font-weight: 800;
+                }
+            }
+        }
+        .seriesjournal-content-body {
+            text-align: center;
+            margin-top: 3vh;
+            .seriesjournal-content-body-profile-pic {
+                max-width: 150px;
+                margin: auto;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .seriesjournal-content-body-nickname {
+                font-size: 1rem;
+                letter-spacing: -1px;
+                font-weight: 800;
+            }
+        }
+        .seriesjournal-content-body-grid {
+            .seriesjournal-content-body-grid-chats-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                list-style-type: none;
+                padding: 0;
+                margin: 30px 0;
+                .seriesjournal-content-body-grid-chat-info-wrapper {
+                    flex: 0 0 calc(33% - 60px);
+                    background: white;
+                    padding: 30px;
+                    margin-top: 30px;
+                    border-radius: 10px;
+                    .seriesjournal-content-body-grid-chat-info {
+                        border-top: 1px solid $site-main-font-color-lightgray;
+                        border-bottom: 1px solid $site-main-font-color-lightgray;
+                        .seriesjournal-content-body-grid-chat-info-title {
+                            border-bottom: 1px solid $site-main-font-color-lightgray;
+                            padding: 0.5vh 0;
+                            .seriesjournal-content-body-grid-chat-info-title-txt {
+                                font-size: 0.9rem;
+                                letter-spacing: -2px;
+                                color: $site-main-font-color-gray;
+                            }
+                        }
+                        .seriesjournal-content-body-grid-chat-info-content {
+                            padding: 0.5vh 0;
+                            .seriesjournal-content-body-grid-chat-info-content-txt {
+                                font-size: 0.9rem;
+                                letter-spacing: -2px;
+                                color: $site-main-font-color-gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .seriesjournal-comments {
+        margin-top: 3vh;
+        .seriesjournal-comments-title {
+            padding-bottom: 1vh;
+            border-bottom: 2px solid $site-main-font-color-lightgray;
+            .seriesjournal-comments-title-txt {
+                font-size: 25px;
+                font-weight: 400;
+                // color: $site-main-font-color-gray;
+            }
+        }
+        .seriesjournal-comments-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            .seriesjournal-comment-info {
+                display: flex;
+                color: $site-main-font-color-gray;
+                font-weight: 500;
+                padding: 5px;
+                border-bottom: 2px solid $site-main-font-color-lightgray;
+                .seriesjournal-comment-info-profile {
+                    flex: 0 0 20%;
+                    .seriesjournal-comment-info-icon {
+                        margin-right: 10px;
+                    }
+                }
+                .seriesjournal-comment-info-content {
+                    flex: 0 0 80%;
+                    .seriesjournal-comment-info-content-txt {
+    
+                    }
+                }
+            }
+        }
+    }
+}

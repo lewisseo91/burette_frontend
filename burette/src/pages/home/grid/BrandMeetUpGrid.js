@@ -1,7 +1,7 @@
 import parse from 'html-react-parser';
 import {Link} from 'react-router-dom';
 
-const BrandMeetUp = ({initData}) => {
+const BrandMeetUpGrid = ({initData}) => {
     const {
         id,
         title,
@@ -52,4 +52,4 @@ const BrandMeetUp = ({initData}) => {
     );
 }
 
-export default BrandMeetUp;
+export default BrandMeetUpGrid;

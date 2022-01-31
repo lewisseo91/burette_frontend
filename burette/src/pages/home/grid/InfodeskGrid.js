@@ -1,6 +1,6 @@
 import parse from 'html-react-parser';
 
-const Infodesk = ({initData}) => {
+const InfodeskGrid = ({initData}) => {
     return (
         <section className={`home-grid`}>
             <div className={`home-grid-title`}>
@@ -28,4 +28,4 @@ const Infodesk = ({initData}) => {
     );
 }
 
-export default Infodesk;
+export default InfodeskGrid;
