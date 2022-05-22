@@ -18,7 +18,7 @@ export default function SignUpPage() {
         const response = await axios.post("http://localhost:8091/user/create", {userId: loginId, email: email, password: password});
         console.log(response);
         
-        if(response.status == 200) {
+        if(response.status === 200) {
             history.push('/login');
         }
     }
