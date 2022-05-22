@@ -12,3 +12,6 @@ export { default as Conference } from '../pages/conference/Conference';
 export { default as Stores } from '../pages/store/Stores';
 export { default as Store } from '../pages/store/Store';
 export { default as Contactus } from '../pages/contactus/Contactus';
+export { default as SignInPage } from '../pages/login/LoginPage';
+export { default as SignUpPage } from '../pages/login/RegisterPage';
+export { default as ForgetPasswordPage } from '../pages/login/ForgetPasswordPage';
