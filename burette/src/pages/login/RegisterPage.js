@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 export default function SignUpPage() {
+    const history = useHistory();
 
     let [loginId, setLoginId] = useState("");
     let [email, setEmail] = useState("");
     let [password, setPassword] = useState("");
 
-    const submitHandler = (e) => {
+    const submitHandler = async (e) => {
         e.preventDefault();
         console.log(loginId);
         console.log(email);
         console.log(password);
 
-        const response = axios.post("http://localhost:8091/user/create", {userId: loginId, email: email, password: password});
+        const response = await axios.post("http://localhost:8091/user/create", {userId: loginId, email: email, password: password});
         console.log(response);
+        
+        if(response.status == 200) {
+            history.push('/login');
+        }
     }
 
     return (

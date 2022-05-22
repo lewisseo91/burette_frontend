@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 const SignInPage = () => {
+    const history = useHistory();
     let [loginId, setLoginId] = useState("");
     let [password, setPassword] = useState("");
 
-    const submitHandler = (e) => {
+    const submitHandler = async (e) => {
         e.preventDefault();
         console.log(loginId);
         console.log(password);
 
-        const response = axios.post("http://localhost:8091/user/login", {userId: loginId, password: password});
+        const response = await axios.post("http://localhost:8091/user/login", {userId: loginId, password: password});
         console.log(response);
+        
+        if(response.status === 200) {
+            history.push('/');
+        }
     }
     
     return (
@@ -25,7 +30,7 @@ const SignInPage = () => {
                 </p>
                 <p>
                     <label>Password</label>
-                    <Link to="/forget-password"><label className="right-label">Forget password?</label></Link>
+                    {/* <Link to="/forget-password"><label className="right-label">Forget password?</label></Link> */}
                     <br/>
                     <input type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required />
                 </p>
